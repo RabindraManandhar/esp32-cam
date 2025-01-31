@@ -1,0 +1,156 @@
+03F58 (15 KiB): IRAM
+[0;32mI (1474) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1481) spi_flash: detected chip: generic[0m
+[0;32mI (1483) spi_flash: flash io: dio[0m
+[0;33mW (1486) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1500) main_task: Started on CPU0[0m
+[0;32mI (1510) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1510) main_task: Calling app_main()[0m
+[0;32mI (1560) wifi:wifi driver task: 3ffca2a0, prio:23, stack:6656, core=0[0m
+[0;32mI (1570) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (1570) wifi:wifi certification version: v7.0[0m
+[0;32mI (1570) wifi:config NVS flash: enabled[0m
+[0;32mI (1570) wifi:config nano formatting: disabled[0m
+[0;32mI (1580) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1580) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1580) wifi:Init management short buffer num: 32[0m
+[0;32mI (1590) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1590) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1600) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1600) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1610) wifi_init: rx ba win: 6[0m
+[0;32mI (1610) wifi_init: accept mbox: 6[0m
+[0;32mI (1610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1610) wifi_init: udp mbox: 6[0m
+[0;32mI (1620) wifi_init: tcp mbox: 6[0m
+[0;32mI (1620) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1620) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1630) wifi_init: tcp mss: 1440[0m
+[0;32mI (1630) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1630) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1640) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1650) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1730) wifi:mode : sta (08:d1:f9:68:06:78)[0m
+[0;32mI (1730) wifi:enable tsf[0m
+[0;32mI (1730) ESP32-CAM: Connecting to Wi-Fi...[0m
+[0;32mI (1730) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1740) cam_hal: cam init ok[0m
+[0;32mI (1740) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1740) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1750) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1750) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1760) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1760) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1770) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1780) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (1790) wifi:new:<9,0>, old:<9,0>, ap:<255,255>, sta:<9,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (1790) ESP32-CAM: Wi-Fi disconnected, reconnecting...[0m
+[0;32mI (1790) camera: Detected camera at address=0x30[0m
+[0;32mI (1800) camera: Detected OV2640 camera[0m
+[0;32mI (1800) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1880) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 15[0m
+[0;32mI (1880) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (1890) cam_hal: cam config ok[0m
+[0;32mI (1890) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1970) ESP32-CAM: Camera initialized successfully[0m
+[0;32mI (1970) ESP32-CAM: Sensor detected![0m
+[0;32mI (1970) ESP32-CAM: Capturing image...[0m
+[0;32mI (1970) main_task: Returned from app_main()[0m
+[1;31mE (2070) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2070) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2070) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (2080) ESP32-CAM: Failed to send image, HTTP Post failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (2080) ESP32-CAM: Delaying due to send failure[0m
+[0;33mW (4210) ESP32-CAM: Wi-Fi disconnected, reconnecting...[0m
+[0;32mI (4230) wifi:new:<9,0>, old:<9,0>, ap:<255,255>, sta:<9,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4230) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4250) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4260) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4280) wifi:connected with rabindra, aid = 25, channel 9, BW20, bssid = fc:34:97:70:81:c8[0m
+[0;32mI (4280) wifi:security: WPA2-PSK, phy: bgn, rssi: -66[0m
+[0;32mI (4280) wifi:pm start, type: 1[0m
+
+[0;32mI (4280) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4310) wifi:<ba-add>idx:0 (ifx:0, fc:34:97:70:81:c8), tid:6, ssn:1, winSize:64[0m
+[0;32mI (4350) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (5310) esp_netif_handlers: sta ip: 192.168.50.177, mask: 255.255.255.0, gw: 192.168.50.1[0m
+[0;32mI (5790) wifi:<ba-add>idx:1 (ifx:0, fc:34:97:70:81:c8), tid:0, ssn:1, winSize:64[0m
+[0;32mI (7090) ESP32-CAM: Capturing image...[0m
+[1;31mE (25340) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[1;31mE (25340) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (25340) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (25340) ESP32-CAM: Failed to send image, HTTP Post failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (25350) ESP32-CAM: Delaying due to send failure[0m
+[0;32mI (30360) ESP32-CAM: Capturing image...[0m
+[1;31mE (48860) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[1;31mE (48860) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (48860) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (48860) ESP32-CAM: Failed to send image, HTTP Post failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (48870) ESP32-CAM: Delaying due to send failure[0m
+[0;32mI (53870) ESP32-CAM: Capturing image...[0m
+[1;31mE (72370) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[1;31mE (72370) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (72370) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (72370) ESP32-CAM: Failed to send image, HTTP Post failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (72380) ESP32-CAM: Delaying due to send failure[0m
+[0;32mI (77380) ESP32-CAM: Capturing image...[0m
+[1;31mE (95880) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[1;31mE (95880) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (95880) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (95880) ESP32-CAM: Failed to send image, HTTP Post failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (95890) ESP32-CAM: Delaying due to send failure[0m
+[0;32mI (100890) ESP32-CAM: Capturing image...[0m
+[1;31mE (119390) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[1;31mE (119390) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (119390) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (119390) ESP32-CAM: Failed to send image, HTTP Post failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (119400) ESP32-CAM: Delaying due to send failure[0m
+[0;32mI (124410) ESP32-CAM: Capturing image...[0m
+[1;31mE (142910) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[1;31mE (142910) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (142910) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (142910) ESP32-CAM: Failed to send image, HTTP Post failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (142920) ESP32-CAM: Delaying due to send failure[0m
+[0;32mI (147930) ESP32-CAM: Capturing image...[0m
+[1;31mE (166430) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[1;31mE (166430) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (166430) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (166430) ESP32-CAM: Failed to send image, HTTP Post failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (166440) ESP32-CAM: Delaying due to send failure[0m
+[0;32mI (171450) ESP32-CAM: Capturing image...[0m
+[1;31mE (189950) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[1;31mE (189950) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (189950) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (189950) ESP32-CAM: Failed to send image, HTTP Post failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (189960) ESP32-CAM: Delaying due to send failure[0m
+[0;32mI (194970) ESP32-CAM: Capturing image...[0m
+[1;31mE (213470) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[1;31mE (213470) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (213470) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (213470) ESP32-CAM: Failed to send image, HTTP Post failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (213480) ESP32-CAM: Delaying due to send failure[0m
+[0;32mI (218490) ESP32-CAM: Capturing image...[0m
+[1;31mE (236990) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[1;31mE (236990) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (236990) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (236990) ESP32-CAM: Failed to send image, HTTP Post failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (237000) ESP32-CAM: Delaying due to send failure[0m
+[0;32mI (242010) ESP32-CAM: Capturing image...[0m
+[1;31mE (260510) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[1;31mE (260510) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (260510) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (260510) ESP32-CAM: Failed to send image, HTTP Post failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (260520) ESP32-CAM: Delaying due to send failure[0m
+[0;32mI (265530) ESP32-CAM: Capturing image...[0m
+[1;31mE (284030) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[1;31mE (284030) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (284030) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (284030) ESP32-CAM: Failed to send image, HTTP Post failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (284040) ESP32-CAM: Delaying due to send failure[0m
+[0;32mI (289050) ESP32-CAM: Capturing image...[0m
+[1;31mE (307550) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[1;31mE (307550) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (307550) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (307550) ESP32-CAM: Failed to send image, HTTP Post failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (307560) ESP32-CAM: Delaying due to send failure[0m
+[0;32mI (312570) ESP32-CAM: Capturing image...[0m

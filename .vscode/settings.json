@@ -1,0 +1,9 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.espIdfPath": "/Users/rabindramanandhar/esp/v5.4/esp-idf",
+    "idf.openOcdConfigs": [
+        "board/esp32-wrover-kit-3.3v.cfg"
+    ],
+    "idf.port": "/dev/tty.usbserial-1140",
+    "idf.toolsPath": "/Users/rabindramanandhar/.espressif"
+}

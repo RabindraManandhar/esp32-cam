@@ -1,0 +1,21 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /Users/rabindramanandhar/esp/esp_cam/build/bootloader/esp-idf/esptool_py && /Users/rabindramanandhar/.espressif/python_env/idf5.4_py3.12_env/bin/python /Users/rabindramanandhar/esp/v5.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/rabindramanandhar/esp/esp_cam/build/bootloader/bootloader.bin
+Bootloader binary size 0x6560 bytes. 0xaa0 bytes (9%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+/Users/rabindramanandhar/esp/esp_cam/main/main.c:75:13: warning: 'wifi_event_handler' defined but not used [-Wunused-function]
+   75 | static void wifi_event_handler(void *arg, esp_event_base_t event_base, int32_t event_id, void *event_data) {
+      |             ^~~~~~~~~~~~~~~~~~
+[5/9] Linking C static library esp-idf/main/libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable esp_cam.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /Users/rabindramanandhar/esp/esp_cam/build/esp_cam.bin
+[9/9] cd /Users/rabindramanandhar/esp/esp_cam/build/esp-idf/esptool_py && /Users/rabindramanandhar/.espressif/python_env/idf5.4_py3.12_env/bin/python /Users/rabindramanandhar/esp/esp_cam/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/rabindramanandhar/esp/esp_cam/build/partition_table/partition-table.bin /Users/rabindramanandhar/esp/esp_cam/build/esp_cam.bin
+esp_cam.bin binary size 0xf9f50 bytes. Smallest app partition is 0x100000 bytes. 0x60b0 bytes (2%) free.
+Warning: The smallest app partition is nearly full (2% free space left)!

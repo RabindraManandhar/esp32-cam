@@ -1,0 +1,257 @@
+[0;32mI (1398) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1406) cpu_start: Pro cpu start user code[0m
+[0;32mI (1406) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1407) app_init: Application information:[0m
+[0;32mI (1407) app_init: Project name:     esp_cam[0m
+[0;32mI (1411) app_init: App version:      1[0m
+[0;32mI (1414) app_init: Compile time:     Jan 30 2025 15:38:10[0m
+[0;32mI (1419) app_init: ELF file SHA256:  c6d9a3ccc...[0m
+[0;32mI (1424) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (1428) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1432) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1436) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (1440) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1446) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1452) heap_init: At 3FFBA2D0 len 00025D30 (151 KiB): DRAM[0m
+[0;32mI (1457) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1462) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1468) heap_init: At 4009C0A8 len 00003F58 (15 KiB): IRAM[0m
+[0;32mI (1474) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1481) spi_flash: detected chip: generic[0m
+[0;32mI (1484) spi_flash: flash io: dio[0m
+[0;33mW (1487) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1500) main_task: Started on CPU0[0m
+[0;32mI (1510) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1510) main_task: Calling app_main()[0m
+[0;32mI (1560) wifi:wifi driver task: 3ffca21c, prio:23, stack:6656, core=0[0m
+[0;32mI (1570) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (1570) wifi:wifi certification version: v7.0[0m
+[0;32mI (1570) wifi:config NVS flash: enabled[0m
+[0;32mI (1570) wifi:config nano formatting: disabled[0m
+[0;32mI (1570) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1580) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1580) wifi:Init management short buffer num: 32[0m
+[0;32mI (1590) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1590) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1600) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1600) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1610) wifi_init: rx ba win: 6[0m
+[0;32mI (1610) wifi_init: accept mbox: 6[0m
+[0;32mI (1610) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1610) wifi_init: udp mbox: 6[0m
+[0;32mI (1620) wifi_init: tcp mbox: 6[0m
+[0;32mI (1620) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1620) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1630) wifi_init: tcp mss: 1440[0m
+[0;32mI (1630) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1630) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1640) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1650) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1720) wifi:mode : sta (08:d1:f9:68:06:78)[0m
+[0;32mI (1730) wifi:enable tsf[0m
+[0;32mI (1730) ESP32-CAM: Connecting to Wi-Fi...[0m
+[1;31mE (1730) wifi:sta is connecting, return error[0m
+[0;32mI (1740) wifi:new:<4,0>, old:<1,0>, ap:<255,255>, sta:<4,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1740) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1750) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1760) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1770) wifi:connected with rabindra, aid = 25, channel 4, BW20, bssid = fc:34:97:70:81:c8[0m
+[0;32mI (1770) wifi:security: WPA2-PSK, phy: bgn, rssi: -65[0m
+[0;32mI (1780) wifi:pm start, type: 1[0m
+
+[0;32mI (1780) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1790) wifi:<ba-add>idx:0 (ifx:0, fc:34:97:70:81:c8), tid:6, ssn:1, winSize:64[0m
+[0;32mI (1820) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2730) ESP32-CAM: Retrying Wi-Fi connection...[0m
+[0;33mW (2730) wifi:sta is connected, disconnect before connecting to new ap[0m
+[0;32mI (2730) ESP32-CAM: Connected to Wi-Fi[0m
+[0;32mI (2730) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (2740) cam_hal: cam init ok[0m
+[0;32mI (2740) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (2740) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (2750) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2780) camera: Detected camera at address=0x30[0m
+[0;32mI (2780) camera: Detected OV2640 camera[0m
+[0;32mI (2780) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (2800) esp_netif_handlers: sta ip: 192.168.50.177, mask: 255.255.255.0, gw: 192.168.50.1[0m
+[0;32mI (2860) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 23[0m
+[0;32mI (2860) cam_hal: Allocating 96000 Byte frame buffer in PSRAM[0m
+[0;32mI (2870) cam_hal: Allocating 96000 Byte frame buffer in PSRAM[0m
+[0;32mI (2870) cam_hal: cam config ok[0m
+[0;32mI (2880) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (2960) ESP32-CAM: Camera initialized successfully[0m
+[0;32mI (2960) ESP32-CAM: Sensor detected![0m
+[0;32mI (2960) ESP32-CAM: Capturing image...[0m
+[0;32mI (2960) main_task: Returned from app_main()[0m
+[0;32mI (3050) ESP32-CAM: Image captured! Size: 15505 bytes[0m
+[0;32mI (3260) wifi:<ba-add>idx:1 (ifx:0, fc:34:97:70:81:c8), tid:0, ssn:1, winSize:64[0m
+[1;31mE (3380) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (3380) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (3380) ESP32-CAM: Failed to send image![0m
+[0;32mI (8380) ESP32-CAM: Capturing image...[0m
+[0;32mI (8380) ESP32-CAM: Image captured! Size: 16867 bytes[0m
+[1;31mE (8430) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (8440) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (8440) ESP32-CAM: Failed to send image![0m
+[0;32mI (13440) ESP32-CAM: Capturing image...[0m
+[0;32mI (13440) ESP32-CAM: Image captured! Size: 15638 bytes[0m
+[0;32mI (13760) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (18760) ESP32-CAM: Capturing image...[0m
+[0;32mI (18760) ESP32-CAM: Image captured! Size: 13768 bytes[0m
+[0;32mI (18830) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (23830) ESP32-CAM: Capturing image...[0m
+[0;32mI (23830) ESP32-CAM: Image captured! Size: 13685 bytes[0m
+[1;31mE (23900) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (23900) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (23900) ESP32-CAM: Failed to send image![0m
+[0;32mI (28910) ESP32-CAM: Capturing image...[0m
+[0;32mI (28910) ESP32-CAM: Image captured! Size: 13770 bytes[0m
+[1;31mE (28950) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (28950) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (28950) ESP32-CAM: Failed to send image![0m
+[0;32mI (33950) ESP32-CAM: Capturing image...[0m
+[0;32mI (33950) ESP32-CAM: Image captured! Size: 13758 bytes[0m
+[0;32mI (34010) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (39010) ESP32-CAM: Capturing image...[0m
+[0;32mI (39010) ESP32-CAM: Image captured! Size: 13790 bytes[0m
+[1;31mE (39100) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (39100) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (39100) ESP32-CAM: Failed to send image![0m
+[0;32mI (44100) ESP32-CAM: Capturing image...[0m
+[0;32mI (44100) ESP32-CAM: Image captured! Size: 13723 bytes[0m
+[1;31mE (44630) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (44640) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (44640) ESP32-CAM: Failed to send image![0m
+[0;32mI (49640) ESP32-CAM: Capturing image...[0m
+[0;32mI (49640) ESP32-CAM: Image captured! Size: 13765 bytes[0m
+[1;31mE (50270) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (50270) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (50270) ESP32-CAM: Failed to send image![0m
+[0;32mI (55270) ESP32-CAM: Capturing image...[0m
+[0;32mI (55270) ESP32-CAM: Image captured! Size: 13770 bytes[0m
+[1;31mE (55890) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (55890) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (55890) ESP32-CAM: Failed to send image![0m
+[0;32mI (60900) ESP32-CAM: Capturing image...[0m
+[0;32mI (60900) ESP32-CAM: Image captured! Size: 13741 bytes[0m
+[0;32mI (61530) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (66530) ESP32-CAM: Capturing image...[0m
+[0;32mI (66530) ESP32-CAM: Image captured! Size: 13752 bytes[0m
+[1;31mE (67160) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (67160) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (67160) ESP32-CAM: Failed to send image![0m
+[0;32mI (72160) ESP32-CAM: Capturing image...[0m
+[0;32mI (72160) ESP32-CAM: Image captured! Size: 13732 bytes[0m
+[1;31mE (72460) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (72460) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (72470) ESP32-CAM: Failed to send image![0m
+[0;32mI (77470) ESP32-CAM: Capturing image...[0m
+[0;32mI (77470) ESP32-CAM: Image captured! Size: 13717 bytes[0m
+[1;31mE (77550) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (77550) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (77550) ESP32-CAM: Failed to send image![0m
+[0;32mI (82560) ESP32-CAM: Capturing image...[0m
+[0;32mI (82560) ESP32-CAM: Image captured! Size: 13754 bytes[0m
+[1;31mE (82930) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (82940) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (82940) ESP32-CAM: Failed to send image![0m
+[0;32mI (87940) ESP32-CAM: Capturing image...[0m
+[0;32mI (87940) ESP32-CAM: Image captured! Size: 13741 bytes[0m
+[1;31mE (88050) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (88050) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (88050) ESP32-CAM: Failed to send image![0m
+[0;32mI (93050) ESP32-CAM: Capturing image...[0m
+[0;32mI (93050) ESP32-CAM: Image captured! Size: 13806 bytes[0m
+[0;32mI (93120) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (98120) ESP32-CAM: Capturing image...[0m
+[0;32mI (98120) ESP32-CAM: Image captured! Size: 13719 bytes[0m
+[0;32mI (98200) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (103210) ESP32-CAM: Capturing image...[0m
+[0;32mI (103210) ESP32-CAM: Image captured! Size: 13759 bytes[0m
+[0;32mI (103300) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (108310) ESP32-CAM: Capturing image...[0m
+[0;32mI (108310) ESP32-CAM: Image captured! Size: 13735 bytes[0m
+[0;32mI (108540) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (113540) ESP32-CAM: Capturing image...[0m
+[0;32mI (113540) ESP32-CAM: Image captured! Size: 13712 bytes[0m
+[1;31mE (113640) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (113640) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (113650) ESP32-CAM: Failed to send image![0m
+[0;32mI (118650) ESP32-CAM: Capturing image...[0m
+[0;32mI (118650) ESP32-CAM: Image captured! Size: 13752 bytes[0m
+[1;31mE (118690) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (118690) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (118690) ESP32-CAM: Failed to send image![0m
+[0;32mI (123690) ESP32-CAM: Capturing image...[0m
+[0;32mI (123690) ESP32-CAM: Image captured! Size: 13762 bytes[0m
+[1;31mE (124910) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (124910) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (124910) ESP32-CAM: Failed to send image![0m
+[0;32mI (129910) ESP32-CAM: Capturing image...[0m
+[0;32mI (129910) ESP32-CAM: Image captured! Size: 13764 bytes[0m
+[0;32mI (130080) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (135080) ESP32-CAM: Capturing image...[0m
+[0;32mI (135080) ESP32-CAM: Image captured! Size: 13755 bytes[0m
+[1;31mE (135460) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (135460) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (135460) ESP32-CAM: Failed to send image![0m
+[0;32mI (140460) ESP32-CAM: Capturing image...[0m
+[0;32mI (140460) ESP32-CAM: Image captured! Size: 13755 bytes[0m
+[0;32mI (140590) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (145590) ESP32-CAM: Capturing image...[0m
+[0;32mI (145590) ESP32-CAM: Image captured! Size: 13761 bytes[0m
+[0;32mI (145810) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (150810) ESP32-CAM: Capturing image...[0m
+[0;32mI (150810) ESP32-CAM: Image captured! Size: 13754 bytes[0m
+[0;32mI (151220) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (156220) ESP32-CAM: Capturing image...[0m
+[0;32mI (156220) ESP32-CAM: Image captured! Size: 13774 bytes[0m
+[0;32mI (156380) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (161380) ESP32-CAM: Capturing image...[0m
+[0;32mI (161380) ESP32-CAM: Image captured! Size: 13790 bytes[0m
+[1;31mE (163210) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (163210) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (163210) ESP32-CAM: Failed to send image![0m
+[0;32mI (168220) ESP32-CAM: Capturing image...[0m
+[0;32mI (168220) ESP32-CAM: Image captured! Size: 13762 bytes[0m
+[0;32mI (169060) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (174060) ESP32-CAM: Capturing image...[0m
+[0;32mI (174060) ESP32-CAM: Image captured! Size: 13698 bytes[0m
+[0;32mI (175810) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (180810) ESP32-CAM: Capturing image...[0m
+[0;32mI (180810) ESP32-CAM: Image captured! Size: 13719 bytes[0m
+[1;31mE (180910) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (180910) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (180910) ESP32-CAM: Failed to send image![0m
+[0;32mI (185910) ESP32-CAM: Capturing image...[0m
+[0;32mI (185910) ESP32-CAM: Image captured! Size: 13747 bytes[0m
+[0;32mI (186120) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (191120) ESP32-CAM: Capturing image...[0m
+[0;32mI (191120) ESP32-CAM: Image captured! Size: 13762 bytes[0m
+[0;32mI (191250) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (196250) ESP32-CAM: Capturing image...[0m
+[0;32mI (196250) ESP32-CAM: Image captured! Size: 13703 bytes[0m
+[1;31mE (196350) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (196350) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (196350) ESP32-CAM: Failed to send image![0m
+[0;32mI (201360) ESP32-CAM: Capturing image...[0m
+[0;32mI (201360) ESP32-CAM: Image captured! Size: 13632 bytes[0m
+[1;31mE (201480) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (201480) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (201480) ESP32-CAM: Failed to send image![0m
+[0;32mI (206490) ESP32-CAM: Capturing image...[0m
+[0;32mI (206490) ESP32-CAM: Image captured! Size: 13695 bytes[0m
+[0;32mI (206610) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (211610) ESP32-CAM: Capturing image...[0m
+[0;32mI (211610) ESP32-CAM: Image captured! Size: 13688 bytes[0m
+[0;32mI (211690) ESP32-CAM: Image sent successfully, HTTP status: 400[0m
+[0;32mI (216690) ESP32-CAM: Capturing image...[0m
+[0;32mI (216690) ESP32-CAM: Image captured! Size: 13736 bytes[0m
+[1;31mE (216730) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (216740) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (216740) ESP32-CAM: Failed to send image![0m
+[0;32mI (221740) ESP32-CAM: Capturing image...[0m
+[0;32mI (221740) ESP32-CAM: Image captured! Size: 13721 bytes[0m
+[1;31mE (221810) transport_base: tcp_write error, errno=Connection reset by peer[0m
+[1;31mE (221810) ESP32-CAM: Failed to send image: ESP_FAIL[0m
+[1;31mE (221820) ESP32-CAM: Failed to send image![0m
