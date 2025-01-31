@@ -13,7 +13,7 @@
 
 // Wi-Fi Configuration
 #define WIFI_SSID "<WIFI_SSID>"
-#define WIFI_PASS "<WIFI_PASSWORD"
+#define WIFI_PASS "<WIFI_PASSWORD>"
 
 // Server URL
 #define SERVER_URL "SERVER_URL/upload"

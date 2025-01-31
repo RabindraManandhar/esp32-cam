@@ -1,0 +1,19 @@
+# Ignore Python bytecode and compiled files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment
+venv/
+
+# Ignore data folders (raw and processed data)
+build/
+
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system-specific or editor files
+.DS_Store
+.idea/
+.vscode/
+.devcontainer/
