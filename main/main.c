@@ -12,11 +12,11 @@
 #include "freertos/task.h"
 
 // Wi-Fi Configuration
-#define WIFI_SSID "rabindra"
-#define WIFI_PASS "888Eight888."
+#define WIFI_SSID "<WIFI_SSID>"
+#define WIFI_PASS "<WIFI_PASSWORD"
 
 // Server URL
-#define SERVER_URL "http://192.168.50.148:8000/upload"
+#define SERVER_URL "SERVER_URL/upload"
 
 // support IDF 5.x
 #ifndef portTICK_RATE_MS

@@ -1,53 +1,145 @@
-| Supported Targets | ESP32 | ESP32-C2 | ESP32-C3 | ESP32-C5 | ESP32-C6 | ESP32-C61 | ESP32-H2 | ESP32-P4 | ESP32-S2 | ESP32-S3 | Linux |
-| ----------------- | ----- | -------- | -------- | -------- | -------- | --------- | -------- | -------- | -------- | -------- | ----- |
+# ESP-CAM Image Capture & Upload System
+A FastAPI-powered ESP32-CAM project for real-time image capture and wireless transmission.
 
-# Hello World Example
+## Overview
+This project utilizes an ESP32-CAM module to capture images and send them wirelessly to a FastAPI server. The server manages image storage, retrieval, and remote access. The system is useful for real-time monitoring, IoT-based vision applications, and AI model training.
 
-Starts a FreeRTOS task to print "Hello World".
+## Table of Contents
+1. [Features](#features)
+2. [Project Structure](#project-structure)
+3. [Requirements](#requirements)
+4. [Installation and Setup](#installation-and-setup)
+5. [Troubleshooting](#troubleshooting)
+6. [Acknowledgements](#acknowledgements)
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
+## Features
+- ESP32-CAM module configuration
+- Wi-Fi connection configuration
+- FastAPI server setup
+- Capture images usign ESP32-CAM
+- Upload images to FastAPI server over Wi-Fi via HTTP POST method
 
-## How to use example
+## Project Structure
+The project contains one source file in C language main.c. The file is located in folder main.
 
-Follow detailed instructions provided specifically for this example.
-
-Select the instructions depending on Espressif chip installed on your development board:
-
-- [ESP32 Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/stable/get-started/index.html)
-- [ESP32-S2 Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/get-started/index.html)
-
-
-## Example folder contents
-
-The project **hello_world** contains one source file in C language [hello_world_main.c](main/hello_world_main.c). The file is located in folder [main](main).
-
-ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt` files that provide set of directives and instructions describing the project's source files and targets (executable, library, or both).
+ESP-IDF projects are built using CMake. The project build configuration is contained in CMakeLists.txt files that provide set of directives and instructions describing the project's source files and targets (executable, library, or both).
 
 Below is short explanation of remaining files in the project folder.
 
 ```
-├── CMakeLists.txt
-├── pytest_hello_world.py      Python script used for automated testing
-├── main
-│   ├── CMakeLists.txt
-│   └── hello_world_main.c
-└── README.md                  This is the file you are currently reading
+ESP32-CAM/
+│── components/                 # IDF Components
+│   ├── esp32-camera            # esp32-camera component
+│   ├── ....                    # Other idf components
+│── main/                       # ESP32-CAM firmware code
+│   ├── main.c                  # ESP32-CAM main program
+│   ├── CMakeLists.txt          # CMake main file
+├── .gitignore                  # Ignore unnecessary files
+├── CMakeLists.txt              # CMake project file
+│── README.md                   # Project documentation
+│── requirements.txt            # Python dependencies
+├── sdkconfig                   # ESP-IDF configuration
+├── sdkconfig.ci                # ESP-IDF configuration
+├── sdkconfig.old               # ESP-IDF configuration
+│── server.py                   # FastAPI backend script
 ```
 
-For more information on structure and contents of ESP-IDF projects, please refer to Section [Build System](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/build-system.html) of the ESP-IDF Programming Guide.
+## Requirements
+1. Hardware
+    - ESP-CAM board with OV2640 camera module
+    - micro USB cable
+    - Computer running Windows, Linux, or macOS
+
+2. Software
+    - Toolchain to compile code for ESP32
+    - Build tools - CMake and Ninja to build a full Application for ESP32
+    - ESP-IDF that essentially contains API (software libraries and source code) for ESP32 and scripts to   operate the Toolchain
+    - Server setup tools - fastAPI and Uvicorn to setup server
+
+
+## Installation and Setup
+1. Install ESP-IDF (ESP32 Development Framework)
+
+    Follow the [official ESP-IDF installation guide](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/index.html) for your OS.
+
+    ```bash
+    git clone --recursive https://github.com/espressif/esp-idf.git
+    cd esp-idf
+    ./install.sh
+    ```
+
+    Activate ESP-IDF
+    ```bash
+    . $HOME/esp/esp-idf/export.sh
+    ```
+
+2. Start a Project
+
+    Clone the repository:
+    ```bash
+    git clone https://github.com/RabindraManandhar/esp32-cam/tree/main
+    cd esp32-cam
+    ```
+
+
+3. Connect Device
+
+    Now connect an ESP32 board to the computer and check under which serial port the board is visible.
+
+
+4. Configure the Project
+
+    Navigate to the project directory, set ESP32 as the target, and run the project configuration utility menuconfig.
+
+    ```bash
+    cd ~/esp/esp32-cam
+    idf.py set-target esp32
+    idf.py menuconfig
+    ```
+
+    Use this menu to set up project specific variables, e.g., Wi-Fi network name and password, the processor speed, etc.
+
+5. Build the Project
+
+    Build the project by running:
+    ```bash
+    idf.py build
+    ```
+
+    If there are no errors, the build finishes by generating the firmware binary .bin files.
+
+
+6. Flash into the Device
+
+    To flash the binaries built for the ESP32 in the previous step, run the following command:
+    ```bash
+    idf.py -p PORT flash
+    ```
+    
+    Replace `PORT` with ESP32 board's USB port name.
+    
+7. Monitor the Output
+
+    To monitor the output, run the following command:
+    ```bash
+    idf.py -p PORT monitor
+    ```
+    
+    Replace `PORT` with ESP32 board's USB port name.
+
 
 ## Troubleshooting
+1. Establish Serial Connection with ESP32:
+    - For Serial Connection issues, please refer to [Establish Serial Connection with ESP32](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/establish-serial-connection.html) for full details.
 
-* Program upload failure
+1. Program upload failure
+    - Hardware connection is not correct: run idf.py -p PORT monitor, and reboot the board to see if there are any output logs.
+    - The baud rate for downloading is too high: lower your baud rate in the menuconfig menu, and try again.
 
-    * Hardware connection is not correct: run `idf.py -p PORT monitor`, and reboot your board to see if there are any output logs.
-    * The baud rate for downloading is too high: lower your baud rate in the `menuconfig` menu, and try again.
+2. Flashing Troubleshooting
+    - For failed to Connect issues, please refer to [Flashing Troubleshooting](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/flashing-troubleshooting.html).
 
-## Technical support and feedback
 
-Please use the following feedback channels:
-
-* For technical queries, go to the [esp32.com](https://esp32.com/) forum
-* For a feature request or bug report, create a [GitHub issue](https://github.com/espressif/esp-idf/issues)
-
-We will get back to you as soon as possible.
+## Acknowledgements
+- `ESPRESSif` for esp32-cam configuration
+- `FastAPI` for server setup
