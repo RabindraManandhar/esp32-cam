@@ -77,7 +77,7 @@ ESP32-CAM/
 
     Clone the repository:
     ```bash
-    git clone https://github.com/RabindraManandhar/esp32-cam/tree/main
+    git clone https://github.com/RabindraManandhar/esp32-cam.git
     cd esp32-cam
     ```
 
